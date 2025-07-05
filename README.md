@@ -68,3 +68,81 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# 🌾 Horticulture Crops Price Prediction
+
+This is a **full-stack machine learning web application** that predicts horticulture crop prices based on user input like crop name, location, soil type, temperature, year, and yield. The app also provides seasonal price trends using historical data.
+
+---
+
+## 🚀 Tech Stack
+
+### 🔹 Backend
+- Python
+- Flask
+- scikit-learn (Machine Learning)
+- MongoDB (for user authentication, password reset)
+- Pandas, NumPy
+
+### 🔹 Frontend
+- React.js
+- Tailwind CSS
+- Axios (for API requests)
+- React Router
+
+---
+
+## 🎯 Features
+
+- ✅ Crop price prediction using ML (Random Forest)
+- ✅ Historical price lookup by season (Kharif, Rabi, Zaid)
+- ✅ User authentication with JWT (Register/Login)
+- ✅ Forgot password flow with OTP verification
+- ✅ Responsive and modern React UI
+
+---
+
+## 🧠 Machine Learning
+
+The backend uses a trained Random Forest Regression model built using:
+- Input Features: Crop, Location, Soil Type, Temperature, Year
+- Output: Estimated Price
+
+Model is trained on a custom dataset (`data_season.csv`).
+
+---
+
+## 📂 Project Structure
+crop-price-predictor/
+├── backend/
+│ ├── app.py
+│ ├── routes/
+│ ├── models/
+│ ├── instance/
+│ ├── data/
+│ └── config.py
+├── frontend/
+│ └── my-app/
+│ ├── src/
+│ └── public/
+├── model/
+│ └── train_and_save_model.py
+├── requirements.txt
+└── README.md
+
+
+---
+
+## 🧪 How to Run the Project
+
+### 🔧 Backend
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+
+
+cd frontend/my-app
+npm install
+npm start
